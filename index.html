@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Make Up Catalog</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Make Up Catalog</h1>
+    </header>
+    <main>
+      <form class="catalog-control">
+        <div class="form-control">
+          <label for="filter-name">Nome:</label>
+          <input type="text" id="filter-name" onblur="loadPage();" />
+        </div>
+        <div class="form-control">
+          <label for="filter-brand">Marca:</label>
+          <select id="filter-brand" onchange="loadPage();">
+            <option value="">Todos</option>
+            <option value="almay">almay</option>
+            <option value="alva">alva</option>
+            <option value="anna sui">anna sui</option>
+            <option value="annabelle">annabelle</option>
+            <option value="benefit">benefit</option>
+            <option value="boosh">boosh</option>
+            <option value="burt's bees">burt's bees</option>
+            <option value="butter london">butter london</option>
+            <option value="c'est moi">c'est moi</option>
+            <option value="cargo cosmetics">cargo cosmetics</option>
+            <option value="china glaze">china glaze</option>
+            <option value="clinique">clinique</option>
+            <option value="coastal classic creation">coastal classic creation</option>
+            <option value="colourpop">colourpop</option>
+            <option value="covergirl">covergirl</option>
+            <option value="dalish">dalish</option>
+            <option value="deciem">deciem</option>
+            <option value="dior">dior</option>
+            <option value="dr. hauschka">dr. hauschka</option>
+            <option value="e.l.f.">e.l.f.</option>
+            <option value="essie">essie</option>
+            <option value="fenty">fenty</option>
+            <option value="glossier">glossier</option>
+            <option value="green people">green people</option>
+            <option value="iman">iman</option>
+            <option value="l'oreal">l'oreal</option>
+            <option value="lotus cosmetics usa">lotus cosmetics usa</option>
+            <option value="maia's mineral galaxy">maia's mineral galaxy</option>
+            <option value="marcelle">marcelle</option>
+            <option value="marienatie">marienatie</option>
+            <option value="maybelline">maybelline</option>
+            <option value="milani">milani</option>
+            <option value="mineral fusion">mineral fusion</option>
+            <option value="misa">misa</option>
+            <option value="mistura">mistura</option>
+            <option value="moov">moov</option>
+            <option value="nudus">nudus</option>
+            <option value="nyx">nyx</option>
+            <option value="orly">orly</option>
+            <option value="pacifica">pacifica</option>
+            <option value="penny lane organics">penny lane organics</option>
+            <option value="physicians formula">physicians formula</option>
+            <option value="piggy paint">piggy paint</option>
+            <option value="pure anada">pure anada</option>
+            <option value="rejuva minerals">rejuva minerals</option>
+            <option value="revlon">revlon</option>
+            <option value="sally b's skin yummies">sally b's skin yummies</option>
+            <option value="salon perfect">salon perfect</option>
+            <option value="sante">sante</option>
+            <option value="sinful colours">sinful colours</option>
+            <option value="smashbox">smashbox</option>
+            <option value="stila">stila</option>
+            <option value="suncoat">suncoat</option>
+            <option value="w3llpeople">w3llpeople</option>
+            <option value="wet n wild">wet n wild</option>
+            <option value="zorah">zorah</option>
+            <option value="zorah biocosmetiques">zorah biocosmetiques</option>
+          </select>
+        </div>
+        <div class="form-control">
+          <label for="filter-type">Tipo:</label>
+          <select id="filter-type" onchange="loadPage();">
+            <option value="">Todos</option>
+            <option value="blush">Blush</option>
+            <option value="bronzer">Bronzer</option>
+            <option value="eyebrow">Eyebrow</option>
+            <option value="eyeliner">Eyeliner</option>
+            <option value="eyeshadow">Eyeshadow</option>
+            <option value="foundation">Foundation</option>
+            <option value="lip_liner">Lip liner</option>
+            <option value="lipstick">Lipstick</option>
+            <option value="mascara">Mascara</option>
+            <option value="nail_polish">Nail polish</option>
+          </select>
+        </div>
+        <div class="form-control">
+          <label for="sort"></label>
+          <select id="sort-type" onchange="loadPage();">
+            <option value="0">Melhor Avaliados</option>
+            <option value="1">Menores Preços</option>
+            <option value="2">Maiores Preços</option>
+            <option value="3">A-Z</option>
+            <option value="4">Z-A</option>
+          </select>
+        </div>
+      </form>
+      <section class="catalog" id="catalog">
+        
+      </section>
+    </main>
+    <script src="js/app.js"></script>
+  </body>
+</html>
